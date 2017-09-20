@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["grant@telmate.com"]
   spec.summary       = %q{Simple memoize with an expiration time (time-to-live).}
   spec.description   = %q{Reusable module to extend named memoized blocks with an expiration time.}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/telmate/memoize_ttl"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
