@@ -2,6 +2,17 @@
 
 Simple memoize with an expiration time (time-to-live).
 
+MemoizeTtl is not a key based storage. 
+MemoizeTtl is an instance variable storage system backed by a ruby macro that writes getter/generator methods with an 
+expire check pattern for you.
+
+## Use Cases
+
+* In process, decentralized cache
+* Volatile data debouncing
+* Cache with-in cache. Self-expiring memoized values are serializable.
+
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -32,4 +43,3 @@ class Taco
 end
 
 ```
-
