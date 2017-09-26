@@ -9,7 +9,7 @@ module MemoizeTtl
         if !@#{name}.nil? && @#{name}_expire_at > Time.now
           return @#{name}
         end
-        @#{name} = @@block_#{name}.call
+        @#{name} = instance_exec(&@@block_#{name})
         @#{name}_expire_at = Time.now + #{ttl_seconds}
         @#{name}
       end
